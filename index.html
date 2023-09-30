@@ -27,29 +27,50 @@
     </style>
   </head>
   <body>
-    <img src="./images/logo.svg" alt="logo" class="logo" />
-    <img src="./images/hero-mobile.jpg" alt="hero image" class="hero_img" />
-    <div class="text_container">
-      <div class="open_text">
-        <h1 class="pink light title">We're</h1>
-        <h1 class="bold title">coming soon</h1>
-      </div>
-      <p class="pink comment">
-        Hello fellow shoppers! We're currently building our new fashion store.
-        Add your email below to stay up-to-date with announcements and our
-        launch deals.
-      </p>
-      <div class="form">
-        <input
-          type="email"
-          id="emails"
-          name="emails"
-          placeholder="Email Address"
+    <div class="page">
+      <div class="content">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <img
+          src="./images/hero-mobile.jpg"
+          alt="hero image"
+          class="hero_img_mobile"
         />
-        <button>
-          <img src="./images/icon-arrow.svg" alt="arrow" />
-        </button>
+        <div class="text_container">
+          <div class="open_text">
+            <h1 class="pink light title">We're</h1>
+            <h1 class="bold title">coming <br />soon</h1>
+          </div>
+          <p class="pink comment">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="form" id="form">
+            <input
+              type="email"
+              id="email_id"
+              name="email"
+              placeholder="Email Address"
+            />
+            <div class="btn_box">
+              <img
+                src="./images/icon-error.svg"
+                alt="error_icon"
+                id="error_icon"
+              />
+              <button id="btn" type="submit" onclick="checker()">
+                <img src="./images/icon-arrow.svg" alt="arrow" />
+              </button>
+            </div>
+          </div>
+          <p id="error-msg">Please provide a valid email</p>
+        </div>
       </div>
+      <img
+        src="./images/hero-desktop.jpg"
+        alt="hero_img_desktop"
+        class="hero_img_desktop"
+      />
     </div>
 
     <footer>
@@ -60,5 +81,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
