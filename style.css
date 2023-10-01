@@ -147,9 +147,9 @@ button:hover {
     height: 650px;
   }
   .content {
-    padding: 80px;
+    padding: 50px;
   }
-  .open_text {s
+  .open_text {
     font-size: 1.3rem;
   }
   .text_container {
